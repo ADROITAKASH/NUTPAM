@@ -3490,6 +3490,13 @@ input::-moz-focus-inner {
     position: relative;
 }
 
+@media screen and (max-width: 600px) {
+    .s-hero {
+        background-color: #000;
+
+    }
+    
+}
 
 
 
@@ -3550,11 +3557,12 @@ canvas {
 
 
 .s-hero__bg {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/par.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
+    width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
