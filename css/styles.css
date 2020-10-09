@@ -4478,6 +4478,17 @@ html.no-csstransitions .s-hero__content {
     line-height: 1.5;
     color: whitesmoke;
 }
+
+@media screen and (max-width: 800px) {
+    .list{
+        text-align:left;
+        font-size: 15px;
+        /* font-weight: 600; */
+        line-height: 1.5;
+        color: whitesmoke;
+    }
+}
+
 /* portfolio info
  *---------------------------------------------- */
 .folio-item__info {
