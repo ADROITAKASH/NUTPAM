@@ -3793,6 +3793,38 @@ canvas {
   #timer span:first-child {
     margin-left: 0;
   }
+@media screen and (max-width: 700px) {
+    #timer{
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    #timer span {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 3px 0 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #timer{
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    #timer span {
+        font-size:19px;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 3px 0 15px;
+    }
+}
+@media screen and (max-width: 300px) {
+    #timer{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    #timer span {
+        font-size:15px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
 /* -------------------------------------------------------------------
  * ## animate intro content
  * ------------------------------------------------------------------- */
