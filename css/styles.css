@@ -738,7 +738,16 @@ a {
 
 a img {
     border: none;
+    height: auto !important;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+/* @media screen and (min-width: 800px) {
+    a img {
+        border-radius: 10px;
+    }
+} */
 
 
 /* ------------------------------------------------------------------- 
@@ -1390,6 +1399,7 @@ textarea {
     -webkit-box-flex: 0;
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 15px;
 }
 
 .block-large-full>.column {
@@ -1506,7 +1516,7 @@ textarea {
         -webkit-box-flex: 0;
         flex: 0 0 100%;
         max-width: 100%;
-        max-height: 100%;
+        height: auto !important;
         margin-bottom: 20px;
         border-radius: 10px;
     }
