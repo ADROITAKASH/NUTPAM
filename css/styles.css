@@ -3822,7 +3822,7 @@ canvas {
 }
 
 
-.s-hero__bg {
+/* .s-hero__bg {
     background-color: #14171B;
     background-repeat: no-repeat;
     background-position: center;
@@ -3845,9 +3845,9 @@ canvas {
     height: 100%;
     background: var(--color-black);
     opacity: .25;
-}
+} */
 
-.s-hero__bg .gradient-overlay {
+/* .s-hero__bg .gradient-overlay {
     display: block;
     position: absolute;
     top: 0;
@@ -3857,7 +3857,7 @@ canvas {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
     opacity: .35;
-}
+} */
 
 
 /* ------------------------------------------------------------------- 
@@ -4334,7 +4334,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 900px) {
-    .s-hero__bg {
+    /* .s-hero__bg {
         display: block;
         width: 50vw;
         height: 50vh;
@@ -4342,7 +4342,7 @@ html.no-csstransitions .s-hero__content {
         right: 0;
         bottom: auto;
         left: auto;
-    }
+    } */
 
     .s-hero__content {
         max-width: 600px;
