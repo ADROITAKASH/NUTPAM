@@ -4769,6 +4769,7 @@ html.no-csstransitions .s-hero__content {
     height: 100%;
     -webkit-transition: all, .5s;
     transition: all, .5s;
+    border-radius: 10px;
 }
 
 
@@ -5496,7 +5497,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 400px) {
     .s-footer__block {
-        font-size: var(--text-md);
+        font-size: var(--text-sm);
         line-height: calc(1.125 * var(--space));
     }
 
