@@ -3239,7 +3239,7 @@ input::-moz-focus-inner {
     list-style: none;
     width: 100%;
     padding: 0;
-    margin: var(--vspace-1) 0 0 0;
+    margin: 0;
     text-align: center;
     position: absolute;
     top: 100%;
@@ -5028,7 +5028,7 @@ html.no-csstransitions .s-hero__content {
 .s-clients {
     background-color: #14171B;
     padding-top: calc(7 * var(--space));
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-3);
     position: relative;
 }
 
@@ -5336,8 +5336,8 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    padding-top: var(--vspace-2);
-    padding-bottom: var(--vspace-4);
+    padding-top: var(--vspace-3);
+    padding-bottom: var(--vspace-2);
     color: white;
 }
 
@@ -5687,7 +5687,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 /*=============================================== cursor ==============================================================*/
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
     html,
     html *,
@@ -5695,6 +5695,7 @@ html.no-csstransitions .s-hero__content {
     body * {
         cursor: none;
     }
+
 
     .cursor-dot,
     .cursor-dot-outline {
@@ -5725,3 +5726,37 @@ html.no-csstransitions .s-hero__content {
         background-color: #3a363781;
         z-index: 200;
     }
+}
+
+/* coordinators */
+.bg {
+    background-color: #14171B;
+    padding-bottom: var(--vspace-3);
+}
+
+.coordinators {
+    display: flex;
+    flex-wrap: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 767px) {
+    .coordinators {
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+.coordinators .col {
+    padding-top: 0px;
+}
+
+.coordinators p {
+    margin-bottom: 0px;
+}

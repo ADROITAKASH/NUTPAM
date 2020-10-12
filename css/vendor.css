@@ -139,6 +139,7 @@
     right: var(--vspace-0_5);
     top: var(--vspace-0_5);
     -webkit-appearance: none;
+    appearance: none;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
