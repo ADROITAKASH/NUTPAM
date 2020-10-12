@@ -314,6 +314,22 @@ html {
     /* 2 */
 }
 
+.sug {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #D9083C;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .sug {
+        visibility: visible;
+    }
+}
+
 /* ------------------------------------------------------------------- 
  * ## sections
  * ------------------------------------------------------------------- */
@@ -1127,6 +1143,7 @@ textarea {
  * ## tablets
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
+
     .row {
         width: 90%;
     }
@@ -1517,7 +1534,8 @@ textarea {
         -webkit-box-flex: 0;
         flex: 0 0 100%;
         max-width: 100%;
-        height: auto !important;
+        max-width: 100% !important;
+        /* height: auto !important; */
         margin-bottom: 20px;
         border-radius: 10px;
     }
@@ -1791,15 +1809,6 @@ h1,
     margin-bottom: var(--vspace-0_75);
 }
 
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4 {
-    margin-top: var(--vspace-2);
-    margin-bottom: var(--vspace-0_5);
-}
 
 h5,
 .h5,
@@ -1818,6 +1827,16 @@ h1,
 
 @media screen and (max-width: 400px) {
 
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        margin-top: var(--vspace-2);
+        margin-bottom: var(--vspace-0_5);
+    }
+
     h1,
     .h1 {
         font-size: var(--text-xxxl);
@@ -1833,7 +1852,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: var(--text-xl);
+    font-size: 25px;
     line-height: var(--vspace-1_25);
 }
 
@@ -5015,7 +5034,7 @@ html.no-csstransitions .s-hero__content {
 
 
 .pad-top {
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
 }
 
 
@@ -5345,25 +5364,36 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 900px) {
+
+    .col {
+        display: block;
+        padding: 0px;
+    }
+
     .col h3 {
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 20px;
+        line-height: 1;
+        margin-top: 3px;
+        margin-bottom: 3;
     }
 
     .col p {
         font-size: 11px;
+        margin-bottom: 0px;
     }
+
+    .row_s {
+        padding-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
-    .col h3 {
-        font-size: 12px;
-        line-height: 1.5;
-    }
 
-    .col p {
-        font-size: 8px;
-        line-height: 1.25;
+    .col_ p {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: medium;
     }
 }
 
