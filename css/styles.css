@@ -3181,6 +3181,7 @@ input::-moz-focus-inner {
     font-weight: 700;
     line-height: var(--vspace-1_75);
     margin-top: 0;
+    text-align: center;
 }
 
 .item-title {
@@ -4502,6 +4503,13 @@ html.no-csstransitions .s-hero__content {
     position: relative;
 }
 
+.s-2about {
+    background-color: var(--color-bg);
+    padding-top: calc(7 * var(--space));
+    padding-bottom: 0;
+    position: relative;
+}
+
 .s-about::before {
     content: "";
     display: block;
@@ -4542,17 +4550,28 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/nutpam.png);
-    /* background-repeat: no-repeat; */
+    background-image: url(../images/sairam_logo.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     position: absolute;
+    background-size: 100%;
     top: var(--vspace-0_5);
     right: var(--gutter-lg);
     left: var(--gutter-lg);
     bottom: var(--vspace-1);
 }
 
+.s-about__photo_nutpam {
+    background-image: url(../images/nutpam.png);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    position: absolute;
+    background-size: 100%;
+    top: var(--vspace-0_5);
+    right: var(--gutter-lg);
+    left: var(--gutter-lg);
+    bottom: var(--vspace-1);
+}
 
 /* ------------------------------------------------------------------- 
  * ## about process
@@ -4657,8 +4676,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-services {
     background-color: var(--color-bg);
-    padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-2);
+    padding-top: calc(7 * var(--space));
 }
 
 .s-services .lead {
@@ -4802,6 +4820,7 @@ html.no-csstransitions .s-hero__content {
 .folio-item__thumb img {
     vertical-align: bottom;
     margin-bottom: 0;
+    height: auto !important;
 }
 
 
@@ -4988,11 +5007,15 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-clients {
     background-color: #14171B;
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(7 * var(--space));
     padding-bottom: var(--vspace-4);
     position: relative;
 }
 
+
+.pad-top {
+    padding-top: calc(6 * var(--space));
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -5307,6 +5330,41 @@ html.no-csstransitions .s-hero__content {
     margin-top: 0;
 }
 
+.row_s {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+.col {
+    display: table-cell;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .col h3 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .col p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .col h3 {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .col p {
+        font-size: 8px;
+        line-height: 1.25;
+    }
+}
 
 /* ------------------------------------------------------------------- 
  * ## footer block
@@ -5552,6 +5610,12 @@ html.no-csstransitions .s-hero__content {
     }
 }
 
+/* hover img */
+/* .masonry-item:hover img {
+    transition: 0.5s all ease-in;
+    transform: scale(.5);
+} */
+
 .masonry-item,
 .masonry-content {
     border-radius: 4px;
@@ -5630,4 +5694,3 @@ html.no-csstransitions .s-hero__content {
         background-color: #3a363781;
         z-index: 200;
     }
-}
