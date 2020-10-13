@@ -5776,3 +5776,7 @@ html.no-csstransitions .s-hero__content {
 .coordinators p {
     margin-bottom: 0px;
 }
+
+.reg-pad_top {
+    margin-top: 10px !important;
+}
