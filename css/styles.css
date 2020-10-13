@@ -1753,7 +1753,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: white;
+    color: #d9083ca1;
 }
 
 a:hover,
@@ -5687,7 +5687,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 /*=============================================== cursor ==============================================================*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 
     html,
     html *,
@@ -5717,15 +5717,20 @@ html.no-csstransitions .s-hero__content {
         width: 8px;
         height: 8px;
         background-color: #d9083c;
-        z-index: 200;
+        z-index: 2000;
     }
 
     .cursor-dot-outline {
         width: 40px;
         height: 40px;
         background-color: #3a363781;
-        z-index: 200;
+        z-index: 2000;
     }
+}
+
+#ps {
+    display: inline;
+
 }
 
 /* coordinators */
@@ -5743,6 +5748,17 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media only screen and (max-width: 767px) {
+    .coordinators {
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .coordinators {
         display: grid;
         display: grid;
